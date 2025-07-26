@@ -43,3 +43,34 @@ The goal was to understand data distributions, detect anomalies, and prepare for
 - **Pairplots** for deeper exploration of multivariate relationships.  
 
 These insights guided the **feature preprocessing** and **modeling** phases (encoding, scaling, handling missing values).
+
+## 🧪 Exploratory Data Analysis (EDA) on Train Data
+
+A detailed EDA was conducted on the Spaceship Titanic training dataset to uncover relationships, distributions, and feature behaviors prior to modeling.
+
+###  Target Variable (`Transported`)
+- The `Transported` column is the target for prediction.
+- The classes are approximately balanced, making it suitable for classification without major resampling.
+
+###  Categorical Features
+- `HomePlanet`, `CryoSleep`, `Destination`, `VIP`, and parsed `Cabin` components (`Deck`, `Side`) were examined.
+- `CryoSleep` showed a strong correlation: passengers in cryo sleep were more likely to be transported.
+- `VIP` passengers had slightly lower transport rates.
+- `HomePlanet` and `Destination` influenced transport probability.
+
+###  Numerical Features
+- Age had a mild trend: younger passengers had a higher chance of being transported.
+- Spending features (`RoomService`, `FoodCourt`, `ShoppingMall`, `Spa`, `VRDeck`) showed meaningful patterns—non-spending passengers were more likely to be transported.
+- Null values in these columns were treated as zeros, indicating no spending.
+
+###  Correlation Analysis
+- A correlation heatmap revealed:
+  - Moderate positive correlation between different spending features.
+  - Negative correlation between spending and the target in some cases (e.g., `Spa`, `VRDeck`).
+
+###  Multivariate Visualizations
+- 2D scatterplots and pairwise plots of numeric columns highlighted clusters and feature interactions.
+- Color-coded plots showed class separation in feature combinations such as:
+  - `Age` vs `RoomService`
+  - `Spa` vs `VRDeck`
+  - `ShoppingMall` vs `FoodCourt`
