@@ -25,11 +25,6 @@ Transported - Whether the passenger was transported to another dimension. This i
 ## Initial EDA
 Performed comprehensive exploratory data preparation on the Spaceship Titanic dataset. Imported essential libraries (pandas, numpy, matplotlib, seaborn) and loaded both training and test datasets from GitHub URLs. Conducted initial data exploration by displaying sample rows, column names, dataset shapes, and detailed information about data types and null counts. Key achievements include statistical summaries of numerical features, uniqueness analysis  across all columns, and feature engineering by parsing the Cabin column into three separate components (Deck, Number, Side). Finally, performed missing value assessment for both datasets, establishing a solid foundation for subsequent modeling and visualization work.
 
-## Exploratory Data Analysis (EDA) – Test Data
-
-In this project, we performed **comprehensive EDA** on the **test dataset** (from the Spaceship Titanic challenge).  
-The goal was to understand data distributions, detect anomalies, and prepare for preprocessing and modeling.
-
 ### Key Steps in EDA:
 1. **Basic Structure & Info**  
    - Checked data types, missing values, and overall shape.
@@ -87,3 +82,10 @@ A detailed EDA was conducted on the Spaceship Titanic training dataset to uncove
   - `Age` vs `RoomService`
   - `Spa` vs `VRDeck`
   - `ShoppingMall` vs `FoodCourt`
+
+
+## Exploratory Data Analysis (EDA) – Test Data
+
+In this project, we performed **comprehensive EDA** on the **test dataset** (from the Spaceship Titanic challenge).  
+The goal was to understand data distributions, detect anomalies, and prepare for preprocessing and modeling.
+
