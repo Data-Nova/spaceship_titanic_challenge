@@ -35,115 +35,23 @@ Spaceship Titanic - Exploratory Data Analysis (EDA)
 
 This project explores the dataset for the Spaceship Titanic classification task — predicting whether a passenger was Transported to another dimension.
 
-📊 Visualizations Summary
 
-1. Target Distribution
+📊 Key Visual Insights
 
-The target variable Transported is nearly balanced between True and False.
-
-This implies that accuracy can be a reliable performance metric.
-
-2. HomePlanet vs Transported
-
-Passengers from Europa were more likely to be transported.
-
-Earth had more passengers, but a lower transport rate.
-
-Mars had the most balanced distribution between Transported classes.
-
-3. CryoSleep vs Transported
+1. CryoSleep vs Transported
 
 Passengers in CryoSleep=True were mostly transported.
 
 Those not in CryoSleep were mostly not transported.
 
-CryoSleep is a strong indicator for prediction.
+CryoSleep is a strong and clear indicator for prediction.
 
-4. Age Distribution
+2. Spa vs VRDeck by Transported
 
-Age is right-skewed; most passengers are between 20–40.
+Strong cluster of transported passengers with both expenses near-zero.
 
-Fewer elderly passengers.
+High-spending passengers were almost exclusively not transported.
 
-5. Correlation Heatmap
+Spending behavior on luxury services has a significant predictive signal.
 
-Transported shows weak negative correlations with:
-
-RoomService, Spa, VRDeck
-
-Positive correlations with none of the features.
-
-Multicollinearity is not a concern.
-
-6. Age vs RoomService by Transported
-
-Most transported passengers had low RoomService expenses.
-
-Non-transported ones spent more.
-
-7. Age vs FoodCourt by Transported
-
-Similar to RoomService; higher spending is associated with non-transported passengers.
-
-8. Age vs ShoppingMall by Transported
-
-No strong visible separation between classes.
-
-Slightly higher Transported ratio with low spending.
-
-9. Age vs Spa by Transported
-
-Transported passengers spent significantly less on Spa.
-
-10. Age vs VRDeck by Transported
-
-Pattern similar to Spa; lower spending increases likelihood of being transported.
-
-11. RoomService vs FoodCourt by Transported
-
-Transported passengers cluster around low expenses in both.
-
-Non-transported ones appear in high-spending regions.
-
-12. RoomService vs ShoppingMall by Transported
-
-Similar trend: transported tend to spend little or none.
-
-13. RoomService vs Spa by Transported
-
-Transported = low Spa + low RoomService.
-
-Non-transported = larger spread.
-
-14. RoomService vs VRDeck by Transported
-
-Transported passengers do not heavily use VRDeck.
-
-15. FoodCourt vs ShoppingMall by Transported
-
-Slight increase in transported passengers at low values.
-
-High-spending passengers mostly not transported.
-
-16. FoodCourt vs Spa by Transported
-
-Very few transported passengers spend heavily in Spa.
-
-17. FoodCourt vs VRDeck by Transported
-
-Transported passengers show low VRDeck spending.
-
-18. ShoppingMall vs Spa by Transported
-
-Majority of transported have low usage in both.
-
-19. ShoppingMall vs VRDeck by Transported
-
-Minimal spending pattern for transported passengers.
-
-20. Spa vs VRDeck by Transported
-
-Strong cluster of transported passengers with both near-zero.
-
-High-spending region dominated by non-transported.
 
