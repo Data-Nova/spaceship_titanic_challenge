@@ -151,3 +151,15 @@ Split the processed training data into 80% train / 20% validation.
 * Hyperparameter tuning using GridSearchCV across key parameters including n_estimators, max_depth, learning_rate, subsample, and colsample_bytree on accuracy.
 * Metrics : Accuracy, Classification Report, Confusion Matrix.
 * Kaggle Submission score - 0.79915
+
+#### XAI on Model 3: 
+
+- SHAP :
+  *  This SHAP summary plot shows that CryoSleep has the strongest impact on the model's output, with clear separation between low (blue) and high (red) values.
+  *  Features like VRDeck, Spa, and HomePlanet_1.0 also influence predictions but to a lesser extent.
+  *  Many other features have SHAP values clustered around zero, indicating they have minimal effect on the model’s decisions.
+    
+- Feature Importance :
+  *  CryoSleep is the most influential feature, contributing the majority of the model’s predictive power.
+  *  Most other features have minimal or no impact, with many contributing nothing at all.
+  *  The feature encoding strategy likely needs refinement due to the presence of unusual fractional values.
