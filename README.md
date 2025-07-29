@@ -89,3 +89,19 @@ We performed an in-depth EDA on the test dataset focusing on :
 * Hyperparameter tuning using GridSearchCV across key parameters including n_estimators, max_depth, learning_rate, subsample, and colsample_bytree on accuracy.
 * Metrics : Accuracy, Classification Report, Confusion Matrix.
 * Kaggle Submission score - 0.80383
+
+#### XAI on Model 1: 
+
+- SHAP :
+  *  CryoSleep status is dominant — most decisive feature.
+  *  Spending behaviors and planet of origin add predictive value, especially when combined with CryoSleep.
+  *  Low-spenders and those from Europa, in CryoSleep, are more likely to be transported.
+  *  High-spenders, VIPs, or those not in CryoSleep tend to be less likely.
+    
+- Feature Importance :
+  *  CryoSleep dominates — likely a proxy for a major condition (e.g., safety, health, or status).
+  *  Spending and origin features help but aren't as predictive.
+  *  Age and destination matter very little, suggesting the model has found better signals elsewhere.
+ 
+
+
