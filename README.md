@@ -171,3 +171,16 @@ Split the processed training data into 80% train / 20% validation.
 * Hyperparameter tuning using GridSearchCV across key parameters including n_estimators, max_depth, min_samples_split, and min_samples_leaf on accuracy.
 * Metrics: Accuracy, Classification Report, Confusion Matrix.
 * Kaggle Submission score - 0.80102
+
+
+  #### XAI on Model 4: 
+
+- SHAP :
+  *  This SHAP interaction plot shows how Age and CryoSleep jointly affect your model’s predictions.
+  *  The color-coded dots reveal patterns—such as younger passengers in CryoSleep contributing positively to prediction scores.
+  *  It visualizes nuanced dependencies that single-feature analysis might miss.
+    
+- Feature Importance :
+  *  CryoSleep and leisure/spending features like Spa and VRDeck are driving the predictions.
+  *  Demographic and location features (Age, HomePlanet) are moderately important.
+  *  VIP status and Destination are surprisingly less influential.
