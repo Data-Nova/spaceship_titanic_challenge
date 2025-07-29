@@ -104,4 +104,9 @@ We performed an in-depth EDA on the test dataset focusing on :
   *  Age and destination matter very little, suggesting the model has found better signals elsewhere.
  
 
+### 📌 Model 2: Random Forest with Grid Search Optimization
 
+* Random Foest classifier
+* Hyperparameter tuning using GridSearchCV across key parameters including n_estimators, max_depth, min_samples_split, and min_samples_leaf on accuracy.
+* Metrics : Accuracy, Classification Report, Confusion Matrix.
+* Kaggle Submission score - 0.79705
