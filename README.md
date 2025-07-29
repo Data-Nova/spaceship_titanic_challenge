@@ -87,7 +87,7 @@ We performed an in-depth EDA on the test dataset focusing on :
 * Metrics : Accuracy, Classification Report, Confusion Matrix.
 * Kaggle Submission score - 0.80383
 
-#### XAI on Model 1: 
+#### 🔍 XAI on Model 1: 
 
 - SHAP :
   *  CryoSleep status is dominant — most decisive feature.
@@ -108,7 +108,7 @@ We performed an in-depth EDA on the test dataset focusing on :
 * Metrics: Accuracy, Classification Report, Confusion Matrix.
 * Kaggle Submission score - 0.79705
 
-#### XAI on Model 2: 
+#### 🔍 XAI on Model 2: 
 
 - SHAP :
   *  CryoSleep is a dominant feature: being in CryoSleep is strongly associated with higher chance of being transported.
@@ -152,7 +152,7 @@ Split the processed training data into 80% train / 20% validation.
 * Metrics : Accuracy, Classification Report, Confusion Matrix.
 * Kaggle Submission score - 0.79915
 
-#### XAI on Model 3: 
+#### 🔍 XAI on Model 3: 
 
 - SHAP :
   *  This SHAP summary plot shows that CryoSleep has the strongest impact on the model's output, with clear separation between low (blue) and high (red) values.
@@ -173,7 +173,7 @@ Split the processed training data into 80% train / 20% validation.
 * Kaggle Submission score - 0.80102
 
 
-  #### XAI on Model 4: 
+  #### 🔍 XAI on Model 4: 
 
 - SHAP :
   *  This SHAP interaction plot shows how Age and CryoSleep jointly affect your model’s predictions.
