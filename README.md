@@ -140,3 +140,14 @@ We performed an in-depth EDA on the test dataset focusing on :
 ### Train/Validation Split
 
 Split the processed training data into 80% train / 20% validation.
+
+
+## 🚀 Models on KNN Imputation
+
+
+### 📌 Model 3: XGBoost with Grid Search Optimization
+
+* XGBoost classifier with a binary classification objective
+* Hyperparameter tuning using GridSearchCV across key parameters including n_estimators, max_depth, learning_rate, subsample, and colsample_bytree on accuracy.
+* Metrics : Accuracy, Classification Report, Confusion Matrix.
+* Kaggle Submission score - 0.79915
