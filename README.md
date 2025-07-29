@@ -110,3 +110,15 @@ We performed an in-depth EDA on the test dataset focusing on :
 * Hyperparameter tuning using GridSearchCV across key parameters including n_estimators, max_depth, min_samples_split, and min_samples_leaf on accuracy.
 * Metrics : Accuracy, Classification Report, Confusion Matrix.
 * Kaggle Submission score - 0.79705
+
+#### XAI on Model 2: 
+
+- SHAP :
+  *  CryoSleep is a dominant feature: being in CryoSleep is strongly associated with higher chance of being transported.
+  *  Age interacts with CryoSleep: when passengers are not in CryoSleep, age has a more varied and less predictable influence on being transported.
+  *  This supports the feature importance rankings: CryoSleep ranks highest, and Age is moderately important mostly through interactions rather than on its own.
+    
+- Feature Importance :
+  *  CryoSleep and leisure/spending features like Spa and VRDeck are driving the predictions.
+  *  Demographic and location features (Age, HomePlanet) are moderately important.
+  *  VIP status and Destination are surprisingly less influential.
