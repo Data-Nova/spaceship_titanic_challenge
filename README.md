@@ -99,3 +99,51 @@ Transported passengers spent significantly less on Spa.
 
 Pattern similar to Spa; lower spending increases likelihood of being transported.
 
+11. RoomService vs FoodCourt by Transported
+
+Transported passengers cluster around low expenses in both.
+
+Non-transported ones appear in high-spending regions.
+
+12. RoomService vs ShoppingMall by Transported
+
+Similar trend: transported tend to spend little or none.
+
+13. RoomService vs Spa by Transported
+
+Transported = low Spa + low RoomService.
+
+Non-transported = larger spread.
+
+14. RoomService vs VRDeck by Transported
+
+Transported passengers do not heavily use VRDeck.
+
+15. FoodCourt vs ShoppingMall by Transported
+
+Slight increase in transported passengers at low values.
+
+High-spending passengers mostly not transported.
+
+16. FoodCourt vs Spa by Transported
+
+Very few transported passengers spend heavily in Spa.
+
+17. FoodCourt vs VRDeck by Transported
+
+Transported passengers show low VRDeck spending.
+
+18. ShoppingMall vs Spa by Transported
+
+Majority of transported have low usage in both.
+
+19. ShoppingMall vs VRDeck by Transported
+
+Minimal spending pattern for transported passengers.
+
+20. Spa vs VRDeck by Transported
+
+Strong cluster of transported passengers with both near-zero.
+
+High-spending region dominated by non-transported.
+
