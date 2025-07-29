@@ -54,4 +54,10 @@ High-spending passengers were almost exclusively not transported.
 
 Spending behavior on luxury services has a significant predictive signal.
 
+## 📊Exploratory Data Analysis (EDA) – Test Dataset
 
+We performed an in-depth EDA on the test dataset focusing on :
+  1. Categorical Feature Distributions
+  2. Numerical Feature Analysis
+  3. Correlation Analysis
+  4. Pairwise Relationships
