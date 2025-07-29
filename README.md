@@ -63,19 +63,16 @@ We performed an in-depth EDA on the test dataset focusing on :
 ## 🧼Preprocessing using Simple Imputation
 
 ### 1. Handling Missing Values
-
 - Drops irrelevant columns like PassengerId, Cabin, and Name
 - Applies Simple Imputation:
 - Median for numerical features
 - Mode for categorical features
   
 ### 2. Feature Encoding
-
 - One-Hot Encoding for: HomePlanet, Destination, Cabin_Side
 - Ordinal Encoding for: VIP, CryoSleep
 
 ### 3. Scaling
-
 - Uses StandardScaler for all numerical features, excluding Transported in training
 
 
@@ -106,9 +103,9 @@ We performed an in-depth EDA on the test dataset focusing on :
 
 ### 📌 Model 2: Random Forest with Grid Search Optimization
 
-* Random Foest classifier
+* Random Forest classifier
 * Hyperparameter tuning using GridSearchCV across key parameters including n_estimators, max_depth, min_samples_split, and min_samples_leaf on accuracy.
-* Metrics : Accuracy, Classification Report, Confusion Matrix.
+* Metrics: Accuracy, Classification Report, Confusion Matrix.
 * Kaggle Submission score - 0.79705
 
 #### XAI on Model 2: 
@@ -122,3 +119,24 @@ We performed an in-depth EDA on the test dataset focusing on :
   *  CryoSleep and leisure/spending features like Spa and VRDeck are driving the predictions.
   *  Demographic and location features (Age, HomePlanet) are moderately important.
   *  VIP status and Destination are surprisingly less influential.
+ 
+  
+## 🧼Preprocessing using KNN Imputation
+
+### 1. Missing Values Check
+- Inspected missing data in both train and test sets.
+
+### 2. KNN Imputation
+- Applied OrdinalEncoder to temporarily convert categorical features.
+- Used KNNImputer (k=5) to fill in missing values.
+- Converted data back to categorical after imputation.
+
+### 3. Encoding
+- One-Hot Encoding for: HomePlanet, Destination, Cabin_Side
+- Ordinal Encoding for: VIP, CryoSleep
+- Ensured train/test sets have aligned columns post-encoding.
+- Target Handling: Reattached and converted target variable Transported to integer.
+
+### Train/Validation Split
+
+Split the processed training data into 80% train / 20% validation.
