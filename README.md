@@ -31,5 +31,71 @@ Performed comprehensive exploratory data preparation on the Spaceship Titanic da
 This notebook provides visual insights from the training dataset of the [Spaceship Titanic](https://www.kaggle.com/competitions/spaceship-titanic) challenge.  
 The following plots explore relationships between features and the target variable `Transported`.
 
+Spaceship Titanic - Exploratory Data Analysis (EDA)
 
+This project explores the dataset for the Spaceship Titanic classification task — predicting whether a passenger was Transported to another dimension.
+
+📊 Visualizations Summary
+
+1. Target Distribution
+
+The target variable Transported is nearly balanced between True and False.
+
+This implies that accuracy can be a reliable performance metric.
+
+2. HomePlanet vs Transported
+
+Passengers from Europa were more likely to be transported.
+
+Earth had more passengers, but a lower transport rate.
+
+Mars had the most balanced distribution between Transported classes.
+
+3. CryoSleep vs Transported
+
+Passengers in CryoSleep=True were mostly transported.
+
+Those not in CryoSleep were mostly not transported.
+
+CryoSleep is a strong indicator for prediction.
+
+4. Age Distribution
+
+Age is right-skewed; most passengers are between 20–40.
+
+Fewer elderly passengers.
+
+5. Correlation Heatmap
+
+Transported shows weak negative correlations with:
+
+RoomService, Spa, VRDeck
+
+Positive correlations with none of the features.
+
+Multicollinearity is not a concern.
+
+6. Age vs RoomService by Transported
+
+Most transported passengers had low RoomService expenses.
+
+Non-transported ones spent more.
+
+7. Age vs FoodCourt by Transported
+
+Similar to RoomService; higher spending is associated with non-transported passengers.
+
+8. Age vs ShoppingMall by Transported
+
+No strong visible separation between classes.
+
+Slightly higher Transported ratio with low spending.
+
+9. Age vs Spa by Transported
+
+Transported passengers spent significantly less on Spa.
+
+10. Age vs VRDeck by Transported
+
+Pattern similar to Spa; lower spending increases likelihood of being transported.
 
