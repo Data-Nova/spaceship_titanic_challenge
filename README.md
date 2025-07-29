@@ -77,3 +77,15 @@ We performed an in-depth EDA on the test dataset focusing on :
 ### 3. Scaling
 
 - Uses StandardScaler for all numerical features, excluding Transported in training
+
+
+
+## 🚀 Models on Simple Imputation
+
+
+### 📌 Model 1: XGBoost with Grid Search Optimization
+
+* XGBoost classifier with a binary classification objective
+* Hyperparameter tuning using GridSearchCV across key parameters including n_estimators, max_depth, learning_rate, subsample, and colsample_bytree on accuracy.
+* Metrics : Accuracy, Classification Report, Confusion Matrix.
+* Kaggle Submission score - 0.80383
