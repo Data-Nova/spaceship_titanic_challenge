@@ -163,3 +163,11 @@ Split the processed training data into 80% train / 20% validation.
   *  CryoSleep is the most influential feature, contributing the majority of the model’s predictive power.
   *  Most other features have minimal or no impact, with many contributing nothing at all.
   *  The feature encoding strategy likely needs refinement due to the presence of unusual fractional values.
+
+
+### 📌 Model 4: Random Forest with Grid Search Optimization
+
+* Random Forest classifier
+* Hyperparameter tuning using GridSearchCV across key parameters including n_estimators, max_depth, min_samples_split, and min_samples_leaf on accuracy.
+* Metrics: Accuracy, Classification Report, Confusion Matrix.
+* Kaggle Submission score - 0.80102
